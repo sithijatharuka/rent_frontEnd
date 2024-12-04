@@ -10,6 +10,13 @@
         margin: 20px;
         line-height: 1.6;
       }
+      .header-box {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        background-color: #4caf50;
+        color: white;
+      }
       .crud-section {
         margin-bottom: 40px;
       }
@@ -51,11 +58,11 @@
     </style>
   </head>
   <body>
-    <h1>Rental Managment Application</h1>
+    <h1 class="header-box">Rental Managment Application</h1>
 
     <!-- Customer Section -->
     <div class="crud-section">
-      <h2>Customer CRUD</h2>
+      <h2>Manage Customer</h2>
       <form id="customer-form">
         <input
           type="number"
@@ -91,7 +98,7 @@
 
     <!-- Rental Section -->
     <div class="crud-section">
-      <h2>Rental CRUD</h2>
+      <h2>Manage Rental</h2>
       <form id="rental-form">
         <input type="number" id="rental-id" placeholder="Rental ID" required />
         <input type="date" id="rental-date" required />
@@ -134,7 +141,7 @@
 
     <!-- Rental Details Section -->
     <div class="crud-section">
-      <h2>Rental Details CRUD</h2>
+      <h2>Manage Rental Details</h2>
       <form id="rental-details-form">
         <input
           type="number"
@@ -162,7 +169,7 @@
 
     <!-- Hardware Item Section -->
     <div class="crud-section">
-      <h2>Hardware Item CRUD</h2>
+      <h2>Manage Hardware Item</h2>
       <form id="hardware-item-form">
         <input type="number" id="item-id" placeholder="Item ID" required />
         <input type="text" id="item-name" placeholder="Item Name" required />

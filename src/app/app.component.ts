@@ -9,5 +9,5 @@ import { CustomerComponent } from "./customer/customer.component";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'Rental App';
 }
