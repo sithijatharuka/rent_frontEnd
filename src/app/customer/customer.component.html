@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      .crud-section {
+        margin-bottom: 40px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      form input {
+        margin-right: 10px;
+        padding: 5px;
+      }
+      button {
+        padding: 5px 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CRUD Application</h1>
+
+    <!-- Customer Section -->
+    <div class="crud-section">
+      <h2>Customer CRUD</h2>
+      <form id="customer-form">
+        <input
+          type="number"
+          id="customer-id"
+          placeholder="Customer ID"
+          required
+        />
+        <input type="text" id="customer-name" placeholder="Name" required />
+        <input type="text" id="customer-city" placeholder="City" required />
+        <input
+          type="text"
+          id="customer-contact"
+          placeholder="Contact"
+          required
+        />
+        <button type="submit">Add Customer</button>
+      </form>
+      <table id="customer-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Contact</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Rows Here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rental Section -->
+    <div class="crud-section">
+      <h2>Rental CRUD</h2>
+      <form id="rental-form">
+        <input type="number" id="rental-id" placeholder="Rental ID" required />
+        <input type="date" id="rental-date" required />
+        <input
+          type="date"
+          id="rental-return-date"
+          placeholder="Return Date"
+          required
+        />
+        <input
+          type="date"
+          id="rental-due-date"
+          placeholder="Due Date"
+          required
+        />
+        <input
+          type="number"
+          id="rental-total-cost"
+          placeholder="Total Cost"
+          required
+        />
+        <button type="submit">Add Rental</button>
+      </form>
+      <table id="rental-table">
+        <thead>
+          <tr>
+            <th>Rental ID</th>
+            <th>Rental Date</th>
+            <th>Return Date</th>
+            <th>Due Date</th>
+            <th>Total Cost</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Rows Here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Rental Details Section -->
+    <div class="crud-section">
+      <h2>Rental Details CRUD</h2>
+      <form id="rental-details-form">
+        <input
+          type="number"
+          id="details-total-cost"
+          placeholder="Total Cost"
+          required
+        />
+        <input type="number" id="details-qty" placeholder="Quantity" required />
+        <button type="submit">Add Rental Detail</button>
+      </form>
+      <table id="rental-details-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Total Cost</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Rows Here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Hardware Item Section -->
+    <div class="crud-section">
+      <h2>Hardware Item CRUD</h2>
+      <form id="hardware-item-form">
+        <input type="number" id="item-id" placeholder="Item ID" required />
+        <input type="text" id="item-name" placeholder="Item Name" required />
+        <input
+          type="number"
+          id="rental-per-day"
+          placeholder="Rental Per Day"
+          required
+        />
+        <input
+          type="number"
+          id="fine-per-day"
+          placeholder="Fine Per Day"
+          required
+        />
+        <input
+          type="text"
+          id="availability"
+          placeholder="Availability"
+          required
+        />
+        <button type="submit">Add Hardware Item</button>
+      </form>
+      <table id="hardware-table">
+        <thead>
+          <tr>
+            <th>Item ID</th>
+            <th>Name</th>
+            <th>Rental Per Day</th>
+            <th>Fine Per Day</th>
+            <th>Availability</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic Rows Here -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
